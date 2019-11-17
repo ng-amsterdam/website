@@ -22,6 +22,7 @@ describe('AppComponent', () => {
 
   it(`should have as text 'Coming Soon!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
     expect(fixture.debugElement.nativeElement.textContent).toContain('ng.amsterdam');
     expect(fixture.debugElement.nativeElement.textContent).toContain('Coming Soon!');
   });
