@@ -1,9 +1,13 @@
-import { getGreeting } from '../support/app.po';
+import { getSubTitle, getTitle } from '../support/app.po';
 
 describe('website', () => {
   beforeEach(() => cy.visit('/'));
 
+  it('should display ng.amsterdam', () => {
+    getTitle().contains('ng.amsterdam');
+  });
+
   it('should display coming soon', () => {
-    getGreeting().contains('Coming Soon!');
+    getSubTitle().contains('Coming Soon!');
   });
 });

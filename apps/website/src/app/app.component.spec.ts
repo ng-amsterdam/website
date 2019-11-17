@@ -14,18 +14,15 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'website'`, () => {
+  it(`should have as title 'ng.amsterdam'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('website');
+    expect(app.title).toEqual('ng.amsterdam');
   });
 
-  it('should render title', () => {
+  it(`should have as text 'Coming Soon!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain(
-      'Welcome to website!'
-    );
+    expect(fixture.debugElement.nativeElement.textContent).toContain('ng.amsterdam');
+    expect(fixture.debugElement.nativeElement.textContent).toContain('Coming Soon!');
   });
 });
