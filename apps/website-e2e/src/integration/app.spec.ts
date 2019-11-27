@@ -3,12 +3,12 @@ import { getSubTitle, getPageTitle, getSiteTitle } from '../support/app.po';
 describe('website', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should have ng.amsterdam as the page title', () => {
-    getSiteTitle().contains('ng.amsterdam')
+  it('should have ngAmsterdam as the page title', () => {
+    getSiteTitle().contains('ngAmsterdam')
   });
 
-  it('should display ng.amsterdam', () => {
-    getPageTitle().contains('ng.amsterdam');
+  it('should display ngAmsterdam', () => {
+    getPageTitle().contains('ngAmsterdam');
   });
 
   it('should display coming soon', () => {

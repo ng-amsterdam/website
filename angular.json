@@ -6,7 +6,7 @@
       "schematics": {},
       "root": "apps/website",
       "sourceRoot": "apps/website/src",
-      "prefix": "ng.amsterdam",
+      "prefix": "ngAmsterdam",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
