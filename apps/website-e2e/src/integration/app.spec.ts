@@ -4,7 +4,7 @@ describe('website', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should have ngAmsterdam as the page title', () => {
-    getSiteTitle().contains('ngAmsterdam')
+    getSiteTitle().contains('ngAmsterdam');
   });
 
   it('should display ngAmsterdam', () => {

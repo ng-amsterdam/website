@@ -23,7 +23,11 @@ describe('AppComponent', () => {
   it(`should have as text 'Coming Soon!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    expect(fixture.debugElement.nativeElement.textContent).toContain('ngAmsterdam');
-    expect(fixture.debugElement.nativeElement.textContent).toContain('Coming Soon!');
+    expect(fixture.debugElement.nativeElement.textContent).toContain(
+      'ngAmsterdam'
+    );
+    expect(fixture.debugElement.nativeElement.textContent).toContain(
+      'Coming Soon!'
+    );
   });
 });

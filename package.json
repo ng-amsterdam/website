@@ -46,17 +46,17 @@
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^8.2.0",
-    "@angular-devkit/build-angular": "^0.803.25",
-    "@angular/cli": "8.3.25",
+    "@angular-devkit/build-angular": "0.803.23",
+    "@angular/cli": "8.3.23",
     "@angular/compiler-cli": "^8.2.0",
     "@angular/language-service": "^8.2.0",
     "@nrwl/cypress": "^8.12.2",
-    "@nrwl/jest": "8.7.1",
-    "@nrwl/workspace": "8.7.1",
+    "@nrwl/jest": "8.12.2",
+    "@nrwl/workspace": "8.12.2",
     "@types/jest": "24.0.9",
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
-    "cypress": "3.4.1",
+    "cypress": "3.8.3",
     "dotenv": "6.2.0",
     "eslint": "6.1.0",
     "husky": "^3.0.9",
@@ -72,5 +72,22 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.5.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "parser": "markdown"
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "parser": "json"
+        }
+      }
+    ]
   }
 }

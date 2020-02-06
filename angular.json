@@ -26,9 +26,7 @@
               "apps/website/src/browserconfig.xml",
               "apps/website/src/site.webmanifest"
             ],
-            "styles": [
-              "apps/website/src/styles.scss"
-            ],
+            "styles": ["apps/website/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -90,10 +88,7 @@
               "apps/website/tsconfig.app.json",
               "apps/website/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/website/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/website/**"]
           }
         },
         "test": {
@@ -127,13 +122,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/website-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/website-e2e/**"
-            ]
+            "tsConfig": ["apps/website-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/website-e2e/**"]
           }
         }
       }
